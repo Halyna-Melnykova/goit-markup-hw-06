@@ -51,7 +51,7 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнеса</h1>
-          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="button hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- specifics -->
@@ -459,7 +459,7 @@
           </address>
         </div>
         <div class="social-media">
-          <strong class="social">приєднюйтесь</strong>
+          <strong class="social">Приєднюйтесь</strong>
           <ul class="list social-list">
             <li class="socials-item">
               <a
@@ -507,6 +507,21 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <strong class="social">Підпишіться на розсилку</strong>
+          <form>
+            <label for="">
+              Email
+              <input type="text" name="email" />
+              <button class="button footer-btn" type="submit">
+                Підписатися
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -516,6 +531,54 @@
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
+        <!-- modal form -->
+        <form class="service-form">
+          <strong class="form-title">Залишіть ваші дані, ми вам передзвонимо</strong>
+          <ul class="form-list">
+            <li>
+              <label class="form-label">
+                Ім'я
+                <input class="form-input" type="text" name="user-name" />
+              </label>
+            </li>
+            <li>
+              <label class="form-label">
+                Телефон
+                <input class="form-input" type="text" name="tel" />
+              </label>
+            </li>
+            <li>
+              <label class="form-label">
+                Пошта
+                <input class="form-input" type="text" name="email" />
+              </label>
+            </li>
+            <li>
+              <label class="form-label">
+                Коментар
+                <textarea
+                  class="form-input"
+                  name="comment"
+                  id=""
+                  rows="7"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
+            </li>
+          </ul>
+          <label class="form-label">
+            <input type="checkbox" name="approval" id="" />
+            <span class="fake">
+              <svg class="check" width="11" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <p>Погоджуюся з розсилкою та приймаю</p>
+            <a href="">Умови договору</a>
+          </label>
+
+          <button type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
