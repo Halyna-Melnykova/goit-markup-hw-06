@@ -509,7 +509,7 @@
         </div>
         <div class="subscription">
           <strong class="social">Підпишіться на розсилку</strong>
-          <form>
+          <form autocomplete="off">
             <label for="">
               <input class="footer-input" type="text" name="email" placeholder="E-mail" />
               <button class="button footer-btn" type="submit">
@@ -531,12 +531,12 @@
           </svg>
         </button>
         <!-- modal form -->
-        <form class="service-form">
+        <form class="service-form" autocomplete="off">
           <strong class="form-title">Залишіть ваші дані, ми вам передзвонимо</strong>
           <ul class="form-list">
             <li>
               <label class="form-label">
-                Ім'я
+                <span class="form-text">Ім'я</span>
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
@@ -545,7 +545,7 @@
             </li>
             <li>
               <label class="form-label">
-                Телефон
+                <span class="form-text">Телефон</span>
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -554,7 +554,7 @@
             </li>
             <li>
               <label class="form-label">
-                Пошта
+                <span class="form-text">Пошта</span>
                 <svg class="form-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
@@ -563,7 +563,7 @@
             </li>
             <li>
               <label class="form-label">
-                Коментар
+                <span class="form-text">Коментар</span>
                 <textarea
                   class="textarea"
                   name="comment"
@@ -585,7 +585,7 @@
             <a href="">Умови договору</a>
           </label>
 
-          <button class="button" type="submit">Відправити</button>
+          <button class="button form-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>

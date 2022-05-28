@@ -675,9 +675,10 @@ body {
 
 .service-form {
   width: 100%;
-  padding: 40px;
 }
 .form-title {
+  display: block;
+  margin: 40px 40px 14px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -689,6 +690,8 @@ body {
 .form-list {
   list-style: none;
   margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
   width: 448px;
   height: 342px;
@@ -698,13 +701,16 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-
+}
+.form-text {
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 .form-input {
   padding: 0;
+  padding-left: 40px;
   margin-top: 4px;
 
   width: 448px;
@@ -712,6 +718,9 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.form-label:focus-within > .form-input {
+  border-color: var(--accent-color);
 }
 .textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -734,4 +743,11 @@ textarea {
   position: absolute;
   left: 12px;
   top: 50%;
+  fill: var(--title-text-color);
+}
+.form-label:focus-within > .form-icon {
+  fill: var(--accent-color);
+}
+.form-btn {
+  margin: 40px 164px;
 }
