@@ -237,8 +237,9 @@
             </path>
         </symbol>
         <symbol id="icon-check" viewBox="0 0 42 32">
-            <path stroke-width=".64"
-                d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z" />
+            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64"
+                d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z">
+            </path>
         </symbol>
         <symbol id="icon-mail" viewBox="0 0 43 32">
             <path
